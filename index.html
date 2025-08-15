@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자기랑 함께하는 아침 수영 데이트 (AI 에디션)</title>
+    <title>자기랑 함께하는 아침 수영 데이트</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,12 +27,6 @@
             <h1 class="text-3xl sm:text-4xl font-bold text-sky-800 mb-2">자기랑 함께하는 아침 수영 데이트 💙</h1>
             <p class="text-slate-600">오랜만에 하는 수영, 같이 으쌰으쌰 힘내서 상쾌한 하루 시작해보자!</p>
         </header>
-
-        <section class="text-center mb-8">
-            <button id="getTipBtn" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
-                ✨ 오늘의 수영 팁 받아보기
-            </button>
-        </section>
 
         <section id="summary" class="mb-10">
             <h2 class="text-2xl font-bold text-center text-sky-700 mb-4">오늘의 운동 계획 (총 2시간)</h2>
@@ -157,27 +151,13 @@
                     <strong>Tip:</strong> "오늘도 고생했다" 하면서 몸과 마음을 차분하게 마무리하자!
                 </blockquote>
             </article>
+
         </main>
         
         <footer class="text-center mt-10 text-slate-500">
-            <p class="mb-4">우리 같이 재밌게 운동하고 맛있는 아침 먹으러 가자!</p>
-            <button id="getMealBtn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
-                ✨ 운동 후 식단 추천받기
-            </button>
+            <p>우리 같이 재밌게 운동하고 맛있는 아침 먹으러 가자!</p>
         </footer>
-    </div>
 
-    <div id="aiModal" class="modal-hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md m-4">
-            <div class="p-5 border-b border-gray-200 flex justify-between items-center">
-                <h3 id="modalTitle" class="text-xl font-bold text-sky-800">AI의 답변</h3>
-                <button id="closeModalBtn" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
-            </div>
-            <div id="modalContent" class="p-6 min-h-[150px] flex items-center justify-center">
-                <div id="loader" class="loader"></div>
-                <p id="modalText" class="text-slate-700 leading-relaxed"></p>
-            </div>
-        </div>
     </div>
 
     <!-- External JavaScript -->
